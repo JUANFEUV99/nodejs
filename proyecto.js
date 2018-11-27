@@ -4,6 +4,20 @@ const argv = require("yargs")
         base: {
             demand: true,
             alias: "b"
+        },
+        limit: {
+            alias: "l",
+            default: 8
+        }
+    })
+    .command("crear", "Crea un archivo txt con la tabla de multiplicar", {
+        base: {
+            demand: true,
+            alias: "b"
+        },
+        limit: {
+            alias: "l",
+            default: 8
         }
     })
     .argv;
@@ -11,8 +25,9 @@ const argv = require("yargs")
 let cadena = "";
 let base = argv.base;
 let comando = argv._[0];
+let limit = argv.limit;
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= limit; i++) {
     cadena += (`${base} * ${i} = ${base*i}\n`);
 }
 
