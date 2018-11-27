@@ -1,0 +1,14 @@
+{
+  "name": "primer_proyecto",
+  "version": "1.0.0",
+  "description": "App de linea de comandos",
+  "main": "proyecto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Felipe Usuga V",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^12.0.5"
+  }
+}
